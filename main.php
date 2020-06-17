@@ -35,11 +35,12 @@ session_start();
       <br><br><br>
       <form action='search_form.php' name='search_form_button' method='post'>
       <input type = "submit" value ="검색"></form>
-      
-      <form action='tv_matjib.php' name='tv_matjib_button' method='post'>
-      <input type = "submit" value ="TV 맛집">
 
-      <input type="button" name="recommend_form_button" value="맛집 추천" onclick="alert('추천~')">
+      <form action='tv_matjib.php' name='tv_matjib_button' method='post'>
+      <input type = "submit" value ="TV 맛집"></form>
+
+      <form action='recommend.php' name='recommend_button' method='post'>
+      <input type = "submit" value ="맛집 추천"></form>
 
     </center>
   </body>
