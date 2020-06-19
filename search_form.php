@@ -9,13 +9,18 @@
     }
     </script>
   <body><br><br>
+    <CENTER>
       <h1>검색</h1>
       <form action='search_region_form.php' name='search_region_form_button' method='post'>
-      <input type = "submit" value ="지역별 검색">
+      <input type = "submit" value ="지역별 검색"></form>
+
+      <form action='search_type_form.php' name='search_type_form_button' method='post'>
+      <input type = "submit" value ="종류별 검색"></form>
+
+      <form action='search_hotplace_form.php' name='search_hotplace_button' method='post'>
+      <input type = "submit" value ="핫플레이스별 검색">
       </form>
 
-      <input type="button" name="search_hotplace_button" value="핫플레이스별 검색" onclick="alert('핫플레이스!')">
-      <input type="button" name="search_type_button" value="종류별 검색" onclick="alert('종류!')">
 
 
   </body>
