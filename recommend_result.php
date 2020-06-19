@@ -6,8 +6,6 @@ $select_age = $_GET['select_age'];
 $select_price = $_GET['select_price'];
 $select_mood = $_GET['select_mood'];
 
-$gu_name_query = "Select * from restaurant where gu = '$gu_name'";
-$region_result = mysqli_query($conn, $gu_name_query);
 
 $query = "SELECT * from recommend LEFT JOIN restaurant ON restaurant.restaurant_id = recommend.restaurant_id
           WHERE option_mood = '$select_mood' && option_age = '$select_age' && option_price='$select_price' ";
