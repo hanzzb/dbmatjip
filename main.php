@@ -26,6 +26,14 @@ session_start();
 
       <form action='signin_form.php' name='sign_in_button' method='post'>
       <input type = "submit" value ="로그인"></form>
+      <?
+      if(isset($_SESSION['user_id'])){
+        echo "
+        <form action='logout.php' name='logout_button' method='post'>
+        <input type = 'submit' value ='로그아웃'></form>
+        ";
+      }
+      ?>
 
       <form action='my_page.php' name='my_page_button' method='post'>
       <input type = "submit" value ="마이페이지"></form>

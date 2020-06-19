@@ -11,7 +11,10 @@
   }
   else
   {
-     echo "again~";
+    echo " <script>
+       alert('로그인하세요!');
+       location.href='signin_form.php';
+     </script>";
   }
 ?>
 
