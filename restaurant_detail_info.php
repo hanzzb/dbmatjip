@@ -14,7 +14,8 @@
       <br>
       <font size=5>★ $first_row[restaurant_name] 상세 페이지 ★
       <br><br>
-      <form action='search_form.php' name='search_form_button' method='post'>
+      <form action='add_mylist.php' name='add_mylist_button' method='post'>
+      <input type = 'hidden' name='add_restaurant_id' value ='$restaurant_id'>
       <input type = 'submit' value ='나만의 맛집 List에 추가하기'></form>
 
       <fieldset style = 'width:500px'>
@@ -35,7 +36,7 @@
     if(option==0){
       alert('별점을 선택해주세요!');
     }
-    else if(cnt>=5){
+    else if(cnt>=100){
       alert('100글자 이상은 불가합니다!');
     }
     else if(cnt==0){
@@ -74,7 +75,7 @@
 
 
       <form action='showReview.php' name='read_review' method='post'>
-      <input type = 'hidden' name='restaurant_id_review' value ='$restaurant_id' />
+      <input type = 'hidden' name='restaurant_id_review' value ='$restaurant_id'>
       <input type = 'submit' value ='리뷰보기' /></form>
       </body>
   ";
