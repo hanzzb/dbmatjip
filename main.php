@@ -23,9 +23,13 @@ session_start();
       <br><br><br>
       <form action='signup_form.php' name='sign_up_button' method='post'>
       <input type = "submit" value ="회원가입"></form>
+
       <form action='signin_form.php' name='sign_in_button' method='post'>
-      <input type = "submit" value ="로그인">
-      </form>
+      <input type = "submit" value ="로그인"></form>
+
+      <form action='my_page.php' name='my_page_button' method='post'>
+      <input type = "submit" value ="마이페이지"></form>
+
 
     </center>
 
