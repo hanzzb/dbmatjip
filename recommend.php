@@ -14,7 +14,7 @@
   <option value="1-2만원대">1-2만원대</option>
   <option value="2-3만원대">2-3만원대</option>
   <option value="3-4만원대">3-4만원대</option>
-  <option value="4만원이상">4만원이상</option>
+  <option value="4만원대이상">4만원대이상</option>
 </select>
 
 <select id="select_mood" name="mood" >
