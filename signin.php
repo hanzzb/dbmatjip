@@ -16,7 +16,6 @@
     </script>";
 }  else {
     $_SESSION['user_id'] = $signin_id;
-		$_SESSION['user_pw'] = $signin_pw;
 ?>
     <script>
       alert('로그인 완료!');

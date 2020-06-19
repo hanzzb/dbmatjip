@@ -14,6 +14,9 @@
       <br>
       <font size=5>★ $first_row[restaurant_name] 상세 페이지 ★
       <br><br>
+      <form action='search_form.php' name='search_form_button' method='post'>
+      <input type = 'submit' value ='나만의 맛집 List에 추가하기'></form>
+
       <fieldset style = 'width:500px'>
 				<legend><b>정보</b></legend>
         <font size=4>
@@ -23,5 +26,58 @@
         <b>핫플레이스:</b> $first_row[hot_place]<br>
         <b>별점:</b> $first_row[star]<br>
         <b>리뷰:</b> $first_row[number_of_review]<br>
+        </fieldset>
   ";
+  echo "<script>
+  function checkReviewAndStar(){
+    var cnt = document.write_review.review.value.length;
+    var option = document.write_review.starstar.value;
+    if(option==0){
+      alert('별점을 선택해주세요!');
+    }
+    else if(cnt>=5){
+      alert('100글자 이상은 불가합니다!');
+    }
+    else if(cnt==0){
+      alert('리뷰를 작성해주세요!');
+    }
+    else{
+      document.write_review.submit();
+    }
+  }
+
+  </script>";
+  echo "
+      <html>
+      <body>
+      <br>
+      <form action='writeReview.php' name='write_review' method='post'>
+      <input type = 'hidden' name='restaurant_id_review' value ='$restaurant_id'>
+      <fieldset style = 'width:500px'>
+      <legend><b>리뷰 및 별점</b></legend>
+      <font size=3>별점 : </font>
+      <select name='starstar'>
+        <option value='0'>선택</option>
+        <option value='1'>0</option>
+        <option value='2'>1</option>
+        <option value='3'>2</option>
+        <option value='4'>3</option>
+        <option value='5'>4</option>
+        <option value='6'>5</option>
+      </select>
+      <br><br>
+      <textarea rows = '4' cols = '50' name='review' maxlength ='100'></textarea><br>
+
+      <input type='button' value='리뷰쓰기' OnClick='checkReviewAndStar();'>
+      </fieldset>
+      </form>
+
+
+      <form action='showReview.php' name='read_review' method='post'>
+      <input type = 'hidden' name='restaurant_id_review' value ='$restaurant_id' />
+      <input type = 'submit' value ='리뷰보기' /></form>
+      </body>
+  ";
+
+
 ?>
