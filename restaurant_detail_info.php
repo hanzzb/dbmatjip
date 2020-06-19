@@ -19,18 +19,35 @@
       <input type = 'hidden' name='add_restaurant_id' value ='$restaurant_id'>
       <input type = 'submit' value ='나만의 맛집 List에 추가하기'></form>
 
+      <form action='share.php' name='share_restaurant' method='post'>
+      <input type = 'hidden' name='idid' value ='$restaurant_id'>
+      <input type='text' size='35' name='friend_id' placeholder='친구 아이디를 입력하세요.'>
+      <input type = 'button' value ='친구에게 공유하기' onClick='rightFriend()'></form></td></h3>
+
       <fieldset style = 'width:500px'>
 				<legend><b>정보</b></legend>
         <font size=4>
         <b>이름:</b> $first_row[restaurant_name]<br>
         <b>주소:</b> 서울특별시 $first_row[gu] $first_row[restaurant_address]<br>
         <b>타입:</b> $first_row[restaurant_type]<br>
-        <b>핫플레이스:</b> $first_row[hot_place]<br>
         <b>별점:</b> $first_row[star]<br>
         <b>리뷰:</b> $first_row[number_of_review]<br>
         </fieldset>
   ";
+
   echo "<script>
+
+  function rightFriend() {
+    if (!document.share_restaurant.friend_id.value) {
+      alert('공유할 친구 아이디가 입력되지 않았습니다. ');
+      return;
+    }
+
+    else{
+      document.share_restaurant.submit();
+    }
+  }
+
   function checkReviewAndStar(){
     var cnt = document.write_review.review.value.length;
     var option = document.write_review.starstar.value;

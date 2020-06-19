@@ -1,6 +1,9 @@
 <?
 
 include './dbconn.php';
+header('Cache-Control:no cache');
+session_cache_limiter('private_no_expire');
+
 session_start();
 if (isset($_SESSION['user_id'])){
   $user_id = $_SESSION['user_id'];
@@ -40,7 +43,7 @@ while($row = mysqli_fetch_array($result))
 {
   echo("
   <tr>
-  <td align = 'center'>$row[restaurant_name]</td>
+  <td align = 'center'><a href='restaurant_detail_info.php?restaurant_id=".$row["restaurant_id"]."'>$row[restaurant_name]</td>
   <td align = 'center'>$row[gu]</td>
   <td align = 'center'>$row[restaurant_type]</td>
   <td align = 'center'>$row[star]</td>

@@ -12,7 +12,9 @@
   $new_pw = $_POST["user_pw"];
   //$review_word = $_POST["review"];
 
-   $update_password_query = "UPDATE member SET email='$new_pw' where member_id = '$user_id'";
+
+
+   $update_password_query = "UPDATE member SET member_pw='$new_pw' where member_id = '$user_id'";
    mysqli_query($conn, $update_password_query);
 
    echo " <script>
