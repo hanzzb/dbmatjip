@@ -3,7 +3,7 @@ include './dbconn.php';
 
 $program = $_GET['program'];
 
-$query = "SELECT restaurant.restaurant_name, restaurant.gu, restaurant.restaurant_type, restaurant_info.star from broadcasting_restaurant
+$query = "SELECT * from broadcasting_restaurant
              LEFT JOIN restaurant ON restaurant.restaurant_id = broadcasting_restaurant.restaurant_id
              LEFT JOIN restaurant_info ON broadcasting_restaurant.restaurant_id = restaurant_info.restaurant_id WHERE program = '$program'";
 
@@ -23,7 +23,7 @@ while($row = mysqli_fetch_array($result))
 {
   echo("
   <tr>
-  <td align = 'center'>$row[restaurant_name]</td>
+  <td align = 'center'><a href='restaurant_detail_info.php?restaurant_id=".$row["restaurant_id"]."'>$row[restaurant_name]</td>
   <td align = 'center'>$row[gu]</td>
   <td align = 'center'>$row[restaurant_type]</td>
   <td align = 'center'>$row[star]</td>

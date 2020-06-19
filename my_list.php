@@ -40,7 +40,7 @@ while($row = mysqli_fetch_array($result))
 {
   echo("
   <tr>
-  <td align = 'center'>$row[restaurant_name]</td>
+  <td align = 'center'><a href='restaurant_detail_info.php?restaurant_id=".$row["restaurant_id"]."'>$row[restaurant_name]</td>
   <td align = 'center'>$row[gu]</td>
   <td align = 'center'>$row[restaurant_type]</td>
   <td align = 'center'>$row[star]</td>
