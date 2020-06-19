@@ -1,6 +1,8 @@
 <?
 
   include './dbconn.php';
+  header('Cache-Control:no cache');
+  session_cache_limiter('private_no_expire');
   session_start();
   if (isset($_SESSION['user_id'])){
     $user_id = $_SESSION['user_id'];
