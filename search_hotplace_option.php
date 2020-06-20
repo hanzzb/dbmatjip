@@ -21,7 +21,7 @@
   $num = mysqli_num_rows($type_result);
   if(!$num)
   {
-    echo "<h6>검색 결과가 없습니다. <br> 빠른 시일내에 업데이트 하겠습니다.<h6>";
+    echo "<h3>검색 결과가 없습니다. <br> 빠른 시일내에 업데이트 하겠습니다.<h3>";
   }
   else {
     echo "
