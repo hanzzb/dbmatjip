@@ -10,8 +10,6 @@
   }
 
   $new_pw = $_POST["user_pw"];
-  //$review_word = $_POST["review"];
-
 
 
    $update_password_query = "UPDATE member SET member_pw='$new_pw' where member_id = '$user_id'";
