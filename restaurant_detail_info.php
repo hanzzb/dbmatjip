@@ -1,4 +1,5 @@
 <?
+  session_start();
   include './dbconn.php';
   $restaurant_id = $_GET["restaurant_id"];
 
@@ -50,6 +51,7 @@
   function checkReviewAndStar(){
     var cnt = document.write_review.review.value.length;
     var option = document.write_review.starstar.value;
+
     if(option==0){
       alert('별점을 선택해주세요!');
     }
