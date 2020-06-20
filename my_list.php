@@ -1,6 +1,7 @@
 <?
 
 include './dbconn.php';
+include 'homebutton.php';
 header('Cache-Control:no cache');
 session_cache_limiter('private_no_expire');
 
@@ -9,7 +10,7 @@ if (isset($_SESSION['user_id'])){
   $user_id = $_SESSION['user_id'];
 }
 else {
-  echo " again2~";
+  echo " 다시 시도해주세요!";
 }
 
 

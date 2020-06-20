@@ -1,6 +1,7 @@
 
 <?
   include './dbconn.php';
+  include 'homebutton.php';
 
   $friend_id = $_POST['friend_id'];
   $restaurant_id = $_POST["idid"];

@@ -1,5 +1,6 @@
 <?
 session_start();
+include 'homebutton.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +11,8 @@ session_start();
   </head>
   <body>
     <center>
-        <img src="logo.png" width="200" height="150">
-
+      <br>
+        <img src="logo.png" width="240" height="180">
     <br><br>
     <?
 	   if(isset($_SESSION['user_id'])){

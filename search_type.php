@@ -1,5 +1,6 @@
 <?
   include './dbconn.php';
+  include 'homebutton.php';
 
   if (isset($_POST['type'])){
     $type_name = $_POST['type'];
@@ -28,7 +29,7 @@
       <body>
       <center>
       <br>
-      <font size=5> ★ $type_name 검색 리스트 ★
+      <font size=5> ★ $type_name 검색 리스트 ★</font>
       <br><br>
   ";
   echo "
@@ -47,9 +48,6 @@
       <br>
   ";
   echo "<p id='type_result'></p>";
-
-
-
 
 
 

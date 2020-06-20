@@ -1,8 +1,3 @@
-
-
-
-
-
 <?
   include './dbconn.php';
 

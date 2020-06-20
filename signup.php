@@ -1,5 +1,6 @@
 <?
   include './dbconn.php';
+  include 'homebutton.php';
 
   $signup_id = $_POST['user_id'];
   $signup_pwd = $_POST['user_pw'];

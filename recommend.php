@@ -1,6 +1,8 @@
+<?
+include 'homebutton.php';
+?>
 <center>
 <br><br><br>
-
 
 <select id="select_age" name="age" >
   <option value="선택1">선택</option>

@@ -1,3 +1,6 @@
+<?
+include 'homebutton.php';
+?>
 <center>
   <br>
   <h1>TV프로그램 방영 맛집</h1>

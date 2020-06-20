@@ -3,12 +3,11 @@
   include './dbconn.php';
 
   session_start();
-  if (isset($_SESSION['user_id'])){
+  if (!isset($_SESSION['user_id'])){
     $user_id = $_SESSION['user_id'];
-
   }
   else {
-    echo " again3~";
+    echo " 다시 시도해주세요!";
   }
 
   $new_email = $_POST['user_email'].'@'.$_POST['emadress'];

@@ -1,5 +1,6 @@
 <?
   include './dbconn.php';
+  include 'homebutton.php';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

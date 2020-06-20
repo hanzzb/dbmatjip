@@ -6,7 +6,7 @@
     $user_id = $_SESSION['user_id'];
   }
   else {
-    echo " again3~";
+    echo " 다시 시도해주세요!";
   }
 
   $new_pw = $_POST["user_pw"];
@@ -19,7 +19,7 @@
 
    echo " <script>
       alert('수정 완료!');
-      location.href='my_info.php';
+      location.href='main.php';
     </script>";
 
 

@@ -1,6 +1,7 @@
 <?
   session_start();
   include './dbconn.php';
+  include 'homebutton.php';
   $restaurant_id = $_GET["restaurant_id"];
 
   $restaurant_id_query = "SELECT * FROM restaurant_info join restaurant ON restaurant.restaurant_id = restaurant_info.restaurant_id AND restaurant.restaurant_id='$restaurant_id'";

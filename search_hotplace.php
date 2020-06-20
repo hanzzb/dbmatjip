@@ -1,5 +1,6 @@
 <?
   include './dbconn.php';
+  include 'homebutton.php';
 
   if (isset($_POST['hothot'])){
     $hotplace_name = $_POST['hothot'];
@@ -27,7 +28,7 @@
       <body>
       <center>
       <br>
-      <font size=5>★ $hotplace_name 검색 리스트★
+      <font size=5>★ $hotplace_name 검색 리스트★</font>
       <br><br>
   ";
 

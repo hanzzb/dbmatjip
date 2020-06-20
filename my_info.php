@@ -1,6 +1,7 @@
 <?
 
   include './dbconn.php';
+  include 'homebutton.php';
   header('Cache-Control:no cache');
   session_cache_limiter('private_no_expire');
   session_start();
@@ -8,7 +9,7 @@
     $user_id = $_SESSION['user_id'];
   }
   else {
-    echo " again3~";
+    echo " 다시 시도해주세요!";
   }
   $query = "SELECT * from member
             WHERE member_id = '$user_id'";

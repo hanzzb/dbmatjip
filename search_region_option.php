@@ -21,7 +21,7 @@
   $region_result = mysqli_query($conn, $gu_name_query);
 
   echo "
-  <table width='500' border='1'>
+  <table width='700' border='1'>
   <tr>
   <td width='20%' align='center'>가게명</td>
   <td width='10%' align='center'>별점</td>
