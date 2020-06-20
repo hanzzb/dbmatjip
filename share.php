@@ -36,7 +36,7 @@
     function plz()
     {
       alert('메일창으로 이동합니다');
-      location.href='restaurant_detail_info.php';
+      location.href='restaurant_detail_info.php?restaurant_id=$restaurant_id';
     }
     </script>
     ";

@@ -19,7 +19,7 @@
 
    echo " <script>
       alert('수정 완료!');
-      location.href='my_info.php';
+      location.href='main.php';
     </script>";
 
 
