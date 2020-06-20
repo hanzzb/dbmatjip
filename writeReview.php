@@ -23,13 +23,13 @@
      $row[2] = $row[2]+1;
      // 별점 갱신
      $row[3] +=($review_star-1);
-     $row[3]= $row[3]/2;
-
+     $row[3]= round($row[3]/2,1);
 
      $star_num_query = "UPDATE restaurant_info SET number_of_review = '$row[2]', star='$row[3]' where restaurant_id = '$review_restaurant_id'";
      mysqli_query($conn, $star_num_query);
      echo "<script>alert('리뷰작성완료!');
      location.href='./main.php';</script>";
+
   }
 
 
