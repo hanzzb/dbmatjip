@@ -5,18 +5,19 @@
   $add_restaurant_id = $_POST["add_restaurant_id"];
 
   if (!isset($_SESSION['user_id'])){
-    $user_id = $_SESSION['user_id'];
     echo "<script>
     alert('로그인을 해야 사용 가능합니다!');
     location.href='restaurant_detail_info.php?restaurant_id=$add_restaurant_id';
     </script>";
   }
   else{
+    $user_id = $_SESSION['user_id'];
+
     $mylist_check = "Select * from mylist where restaurant_id = '$add_restaurant_id' AND member_id ='$user_id'";
     $mylist_check_result = mysqli_query($conn, $mylist_check);
     $num = mysqli_num_rows($mylist_check_result);
 
-    if (!$num) {
+    if ($num) {
       echo "<script>
         alert('이미 추가 되어있습니다!');
         location.href='restaurant_detail_info.php?restaurant_id=$add_restaurant_id';

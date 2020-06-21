@@ -49,6 +49,7 @@ include 'homebutton.php';
               <option value="naver.com">naver.com</option>
               <option value="nate.com">nate.com</option>
               <option value="gmail.com">gmail.com</option>
+              <option value="sejong.ac.kr">sejong.ac.kr</option>
 							<option value="hanmail.com">hanmail.com</option></select></td>
 						</tr>
 					</table>
