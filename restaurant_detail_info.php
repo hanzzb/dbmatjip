@@ -30,7 +30,7 @@
         <font size=4>
         <b>이름:</b> $first_row[restaurant_name]<br>
         <b>주소:</b> 서울특별시 $first_row[gu] $first_row[restaurant_address]<br>
-        <b>타입:</b> $first_row[restaurant_type]<br>
+        <b>종류:</b> $first_row[restaurant_type]<br>
         <b>별점:</b> $first_row[star]<br>
         <b>리뷰:</b> $first_row[number_of_review]<br>
         </fieldset>
