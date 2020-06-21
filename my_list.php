@@ -67,18 +67,5 @@ while($row = mysqli_fetch_array($result))
 
 function button_click(id){
   alert('삭제~');
-
-
-  <?
-
-    include './dbconn.php';
-    $id = $_GET['id'];
-    echo "$id";
-    //$query_plz = "DELETE FROM mylist WHERE restaurant_id='$id' && member_id='jione'";
-    //echo "$query_plz";
-    //mysqli_query($conn, $query_plz);
-
-
-  ?>
 }
 </script>

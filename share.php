@@ -49,7 +49,7 @@
     echo "
     <script>
       alert('해당 친구는 회원이 아닙니다!');
-      location.href='restaurant_detail_info.php';
+      location.href='restaurant_detail_info.php?restaurant_id=$restaurant_id';
     </script>
     ";
   }
