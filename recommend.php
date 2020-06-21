@@ -2,8 +2,9 @@
 include 'homebutton.php';
 ?>
 <center>
-<br><br><br>
-
+<br><br>
+<h2>사용자 맞춤 맛집 추천</h2>
+<br>
 <select id="select_age" name="age" >
   <option value="선택1">나이</option>
   <option value="20">20대</option>

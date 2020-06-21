@@ -25,7 +25,7 @@
     <br><br><br>
     <form action='my_list.php' name='show_list_button' method='post'>
     <input type = "submit" value ="나만의 맛집 리스트"></form>
-
+    <br>
     <form action='my_info.php' name='change_info_button' method='post'>
     <input type = "submit" value ="정보 수정"></form>
 

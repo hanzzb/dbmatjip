@@ -24,7 +24,8 @@ include 'homebutton.php';
     </script>
   <body><br><br>
     <form name ="signin_form" action='signin.php' method="post">
-      <h1>로그인</h1>
+      <center><h1>로그인</h1></center>
+      <br><br>
 				<table align="center" border="0" cellspacing="0" width="400">
         			<tr>
                 <td width ="130" align="center">
@@ -48,7 +49,7 @@ include 'homebutton.php';
         	</tr>
         	<tr>
            		<td colspan="3" align="center">
-              	<br><a href="signup_form.php">회원가입 하시겠습니까?</a>
+              	<br><br><a href="signup_form.php">회원가입 하시겠습니까?</a>
            </td>
         </tr>
     </table>
