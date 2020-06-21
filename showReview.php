@@ -12,7 +12,7 @@
       <body>
       <center>
       <br>
-      <font size=5> ★ 리뷰 ★
+      <font size=5> ★ 리뷰 ★</font>
       <br><br>
       <table width='700' border='1'>
       <tr>
