@@ -24,6 +24,7 @@
   <table width='700' border='1'>
   <tr>
   <td width='20%' align='center'>가게명</td>
+  <td width='10%' align='center'>종류</td>
   <td width='10%' align='center'>별점</td>
   <td width='5%' align='center'>리뷰수</td>
   </tr>
@@ -34,6 +35,7 @@
         <tr>
         <td align='center'><a href='restaurant_detail_info.php?restaurant_id=".$row["restaurant_id"]."'>
         $row[restaurant_name]</td>
+        <td align='center'>$row[restaurant_type]</td>
         <td align='center'>$row[star]</td>
         <td align='center'>$row[number_of_review]</td>
         </tr>
