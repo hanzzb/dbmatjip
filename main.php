@@ -23,6 +23,7 @@ include 'homebutton.php';
   <center>
       <br><br><br>
 
+<!-- 로그인하지 않은 경우 회원가입, 로그인 버튼이 나타나게 함  -->
       <?
       if(!isset($_SESSION['user_id'])){
         echo "
@@ -35,7 +36,8 @@ include 'homebutton.php';
       }
       ?>
 
-      <?
+<!-- 로그인한 경우 로그아웃 버튼이 나타나게 함  -->
+  <?
       if(isset($_SESSION['user_id'])){
         echo "
         <form action='logout.php' name='logout_button' method='post'>

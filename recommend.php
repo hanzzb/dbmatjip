@@ -1,6 +1,13 @@
+<!--
+추천 페이지
+사용자로부터 나이, 가격대, 분위기를 입력받아 이에 맞는 맛집을 추천해주는 페이지
+-->
+
 <?
 include 'homebutton.php';
 ?>
+
+
 <center>
 <br><br>
 <h2>사용자 맞춤 맛집 추천</h2>
@@ -29,8 +36,13 @@ include 'homebutton.php';
   <option value="캐주얼한">캐주얼한</option>
   <option value="고급스러운">고급스러운</option>
 </select>
+<!-- 버튼 클릭 시 reco함수를 호출해 결과값을 출력하도록 함-->
 <button onclick="reco()">찾아주세요!</button>
 
+<!--
+한 페이지 내에서 변경사항이 발생할 때마다 같은 페이지에서 계속해서 결과를 갱신할 수 있도록 함
+select box의 값을 php로 전달해 변수에 값을 넣는것이 불가능하여 ajax를 이용해 구현함
+-->
 <center>
   <p id="result"></p>
   <script src="//code.jquery.com/jquery.min.js"></script>

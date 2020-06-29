@@ -8,6 +8,10 @@
   $restaurant_id_result = mysqli_query($conn, $restaurant_id_query);
   $first_row = mysqli_fetch_array($restaurant_id_result);
 
+
+/*
+  텍스트창에 친구 아이디를 입력 후 친구에게 공유하기를 누르면 해당 맛집의 정보가 메일로 전송됨
+*/
   echo "
       <html>
       <head><title>가게 상세페이지</title></head>
@@ -36,6 +40,9 @@
         </fieldset>
   ";
 
+/*
+사용자가 입력한 친구 id가 공백인지 아닌지 확인하고 공백이 아니라면 submit하는 rightFriend()
+*/
   echo "<script>
 
   function rightFriend() {

@@ -2,8 +2,11 @@
 
   include './dbconn.php';
   include 'homebutton.php';
+
+  //뒤로가기 눌렀을 때 페이지가 뜨지 않는 오류 해결
   header('Cache-Control:no cache');
   session_cache_limiter('private_no_expire');
+
   session_start();
   if (isset($_SESSION['user_id'])){
     $user_id = $_SESSION['user_id'];
@@ -11,12 +14,19 @@
   else {
     echo " 다시 시도해주세요!";
   }
+
+  //회원의 정보를 가져오기 위한 쿼리문
   $query = "SELECT * from member
             WHERE member_id = '$user_id'";
 
   $result=mysqli_query($conn, $query);
   $row = mysqli_fetch_array($result);
 
+
+/*
+  현재 회원의 정보를 출력하고 비밀번호와 이메일을 수정할 수 있도록 함
+  onClick시 각각의 함수를 통해 공백인지 아닌지 검사하도록 함
+*/
   echo "
   <center>
   <br>
@@ -38,12 +48,15 @@
     <input type='text' name='user_email'>@<select name='emadress'>
     <option value='naver.com'>naver.com</option>
     <option value='nate.com'>nate.com</option>
+    <option value='naver.com'>gmail.com</option>
+    <option value='naver.com'>sejong.ac.kr</option>
     <option value='hanmail.com'>hanmail.com</option></select>
     <input type = 'button' value ='수정' onClick='rightEmail()'></form></td></h3>
   </center>
 
   ";
 
+//수정 버튼이 눌렸을 때 입력 칸이 공백인지 아닌지 검사하는 함수들
   echo "<script>
   function rightPassword() {
     if (!document.change_password.user_pw.value) {
