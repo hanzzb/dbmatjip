@@ -23,7 +23,7 @@
 
   echo " <script>
       alert('이메일 수정 완료!');
-      location.href='my_info.php';
+      location.href='my_info.php?email=$new_email';
     </script>";
 
 ?>
