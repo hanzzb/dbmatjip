@@ -1,6 +1,6 @@
 <?
   include './dbconn.php';
-  include 'homebutton.php';
+  include 'homebutton.php'; // 홈 버튼
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -13,7 +13,7 @@
     <CENTER>
     <h1>타입별 검색</h1><br>
     <form name = search_type_form.php action="search_type.php" method="post">
-
+      <!-- 음식 종류들을 radio button으로 선택하도록 설정 -->
       <fieldset style = "width:500px">
 
      <p><label>

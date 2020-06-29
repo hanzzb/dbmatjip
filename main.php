@@ -1,6 +1,6 @@
 <?
 session_start();
-include 'homebutton.php';
+include 'homebutton.php'; // 홈 버튼
 ?>
 
 <!DOCTYPE html>

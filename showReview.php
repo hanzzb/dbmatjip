@@ -1,6 +1,6 @@
 <?
   include './dbconn.php';
-  include 'homebutton.php';
+  include 'homebutton.php'; // 홈 버튼
 
   $review_restaurant_id = $_POST["restaurant_id_review"];
 
@@ -20,7 +20,7 @@
       <td width='80%' align='center'>리뷰</td>
        </tr>
   ";
-
+  // 해당 가게에 대한, 리뷰와 이를 작성한 회원의 ID 출력
   while($row = mysqli_fetch_array($review_result))
     {
       echo "

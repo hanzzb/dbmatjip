@@ -1,5 +1,5 @@
 <?
-include 'homebutton.php';
+include 'homebutton.php'; // 홈 버튼
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,6 +8,7 @@ include 'homebutton.php';
     <title>회원가입 폼</title>
   </head>
   <script>
+  // 아이디, 비밀번호, 이메일 부분이 모두 채워졌는지 확인
     function signup_checkform() {
       if (!document.signup_form.user_id.value) {
         alert('아이디가 입력되지 않았습니다. ');
@@ -23,6 +24,7 @@ include 'homebutton.php';
         alert('이메일이 입력되지 않았습니다. ');
         return;
       }
+      // 모두 채워졌다면, signup.php로 sumbit
       else{
         document.signup_form.submit();
       }

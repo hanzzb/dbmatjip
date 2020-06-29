@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script>
     function homebutton_clicked(){
-      location.href='main.php';
+      location.href='main.php'; // 메인페이지로 이동
     }
     </script>
   </head>
