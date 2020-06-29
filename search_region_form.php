@@ -1,6 +1,6 @@
 <?
   include './dbconn.php';
-  include 'homebutton.php';
+  include 'homebutton.php'; // 홈 버튼
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -13,9 +13,8 @@
     <CENTER>
     <h1>지역별 검색</h1><br>
     <form name = search_region_form.php action="search_region.php" method="post">
-
+      <!-- 서울 내, 구들을 radio button으로 선택하도록 설정 -->
       <fieldset style = "width:500px">
-
      <p><label>
        <input name="gugu" type="radio" value ="강남구"checked />
        <span>강남구</span>&emsp;
@@ -82,13 +81,9 @@
        <span>중랑구</span>
      </label></p>
 
-
    </fieldset>
    <br><input type = "submit" value ="검색">
  </form>
-
-
-
 
   </body>
 </html>

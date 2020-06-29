@@ -1,5 +1,5 @@
 <?
-include 'homebutton.php';
+include 'homebutton.php'; // 홈 버튼
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,6 +8,7 @@ include 'homebutton.php';
     <title>로그인 폼</title>
   </head>
   <script>
+   // 아이디, 비밀번호 부분이 모두 채워졌는지 확인
     function signin_checkform() {
       if (!document.signin_form.login_id.value) {
         alert('아이디가 입력되지 않았습니다.');
@@ -19,6 +20,7 @@ include 'homebutton.php';
         document.signin_form.login_pw.focus();
         return;
       }
+      // 모두 채워졌다면 signin.php로 submit
       document.signin_form.submit();
     }
     </script>
@@ -49,6 +51,7 @@ include 'homebutton.php';
         	</tr>
         	<tr>
            		<td colspan="3" align="center">
+                <!-- 회원가입 페이지로 바로 이동할수 있도록 링크 추가  -->
               	<br><br><a href="signup_form.php">회원가입 하시겠습니까?</a>
            </td>
         </tr>

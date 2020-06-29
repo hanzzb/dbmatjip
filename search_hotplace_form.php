@@ -1,6 +1,6 @@
 <?
   include './dbconn.php';
-  include 'homebutton.php';
+  include 'homebutton.php';   // 홈 버튼
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -13,7 +13,7 @@
     <CENTER>
     <h1>핫플레이스별 검색</h1><br>
     <form name = search_hotplace_form.php action="search_hotplace.php" method="post">
-
+      <!-- 서울 내, 핫플레이스를 radio button으로 선택하도록 설정 -->
       <fieldset style = "width:700px">
 
      <p><label>

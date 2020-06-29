@@ -3,6 +3,7 @@
      $db_user_id = "root";
      $db_pwd = "0000";
      $db_name = "matjipdb";
+     // DB에 연결
      $conn = mysqli_connect($host_name, $db_user_id, $db_pwd, $db_name);
 
      /* check connection */
